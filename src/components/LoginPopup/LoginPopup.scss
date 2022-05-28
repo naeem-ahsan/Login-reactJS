@@ -1,0 +1,132 @@
+.app__popup {
+  position: absolute;
+  z-index: 8;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 85, 151, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  .popup__inner {
+    position: relative;
+    padding: 2rem;
+    background-color: var(--blue-color);
+    width: auto;
+    height: auto;
+    border-radius: 4%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    -o-border-radius: 4%;
+
+    svg {
+      color: var(--white-color);
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  .close__btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+}
+
+.form__login {
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 3rem;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  :focus {
+    outline: none;
+  }
+
+  input {
+    color: var(--black-color);
+    font-size: 13px;
+
+    &:focus {
+      background: rgba(255, 255, 255, 0.9);
+      border: none;
+      transition: background 0.5s ease;
+    }
+  }
+
+  .forget__pass {
+    text-align: center;
+  
+    a {
+      text-decoration: none;
+      color: var(--white-color);
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 300ms ease;
+      -webkit-transition: all 300ms ease;
+      -moz-transition: all 300ms ease;
+      -ms-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+
+      &:hover{
+        color: var(--red-color);
+      }
+    }
+  }
+  
+  .btn__signin {
+    margin: 2rem 0;
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    font-weight: 600;
+    background-color: #8b8bff;
+    color: var(--white-color);
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .form__signup {
+    text-align: center;
+    span {
+      font-size: 16px;
+      color: var(--light-color);
+
+      a {
+        color: #eeff03;
+      }
+    }
+  }
+
+  .app__recapta {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form__styling {
+  width: 100%;
+  height: 2.5rem;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 15px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.6);
+}
